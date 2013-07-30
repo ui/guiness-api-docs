@@ -17,7 +17,7 @@ A. Request
     Parameter   Required    Description
     =========== =========== =========================
     token       Yes         Authentication string
-    user_email  Yes         A string indicating user's
+    customer    Yes         A string indicating user's
                             email address
     store       Yes         A number indicating
                             Merchant's store id where the transaction is initiated
@@ -29,7 +29,7 @@ Here's an example of how the API call might look like in JSON format::
 
         {
             "token": "aaaabbbbccccddddeeeefffff",
-            "user_email": "Customer@stamps.co.id",
+            "customer": "Customer@stamps.co.id",
             "store": 32,
             "reward": 1
         }
@@ -38,7 +38,7 @@ Example of API call request using cURL
 
 .. code-block :: bash
 
-    $ curl -X POST -H "Content-Type: application/json" -d '{ "token": "aaabbbcccdddeeefff", "user_email": "Customer@stamps.co.id", "store": 32, "reward": 12}' https://stamps.co.id/api/redemptions/add
+    $ curl -X POST -H "Content-Type: application/json" -d '{ "token": "aaabbbcccdddeeefff", "customer": "Customer@stamps.co.id", "store": 32, "reward": 12}' https://stamps.co.id/api/redemptions/add
 
 B. Response
 -----------------------------
