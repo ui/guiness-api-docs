@@ -22,7 +22,7 @@ You can add a new transaction on stamps by calling the API with these parameters
     =============== =========== =======================
     token           Yes         Authentication string
     customer        Yes         A string indicating user's
-                                email address
+                                email or twelve digit ID number
     store           Yes         A number indicating Merchant's
                                 store id where the transaction is initiated
     invoice_number  Yes         POS transaction number (must
